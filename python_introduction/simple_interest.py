@@ -1,7 +1,7 @@
 principal = 1000
 rate = 0.05
 time = 3
-Interest = (principal * rate * time)
+Interest = (principal * rate * time)/100
 print(f"The simple interest is: {Interest}")
 
 # Output: 150.0
