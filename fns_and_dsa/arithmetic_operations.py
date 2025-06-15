@@ -1,13 +1,13 @@
-def perform_operations(string):
-    # Assume string is in the format "num1,num2"
-    num1_str, num2_str = string.split(",")
-    num1 = float(num1_str)
-    num2 = float(num2_str)
-    print("Addition:", num1 + num2)
-    print("Subtraction:", num1 - num2)
-    print("Multiplication:", num1 * num2)
-    print("Division:", num1 / num2)
-
-num1_str = input("Enter a number: ")
-num1 = float(num1_str)
-print(num1)
+def perform_operations(num1: float, num2: float, operation: str):
+    if operation == "add":
+        return num1 + num2
+    elif operation == "subtract":
+        return num1 - num2
+    elif operation == "multipy":
+        return num1 * num2
+    elif operation == "divide":
+        if num2 == 0:
+            return "Error: Cannot divide by zero"
+        return num1 / num2
+    else:
+        return "Error: Invalid operation"
