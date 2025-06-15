@@ -9,7 +9,7 @@ def display_current_datetime():
 # It allows you to specify the output format using format codes (like %Y for year, %m for month, %d for day, etc.).
 
 def calculate_future_date():
-  days = int(input("Enter the number of days to add: "))
+  days = int(input("Enter the number of days to add to the current date: "))
   # if days < 0:
   #   print("Please enter a non-negative number of days.")
   #   return
