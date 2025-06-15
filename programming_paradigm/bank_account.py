@@ -9,10 +9,11 @@ class BankAccount:
         if amount <= self.account_balance:
             self.account_balance -= amount
             return True
-        return False
+        else:
+            return False
 
     def display_balance(self):
-        print(f"Current Balance: ${self.account_balance:.2f}")
+        print(f"Current Balance: ${self.account_balance:.2f}") #balance formatted to 2 decimal places.
 
 
 
